@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * @param string|array|object $message The item to be placed in the debug log.
  * @return void
  */
-if( !function_exists( 'log_me' ) {
+if( !function_exists( 'log_me' ) ) {
 	function log_me( $message ) {
 	    if ( WP_DEBUG === true ) {
 	        if ( is_array( $message ) || is_object( $message ) ) {
