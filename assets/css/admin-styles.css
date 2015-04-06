@@ -1,0 +1,29 @@
+/*
+Admin styles for core functionality plugin.
+*/
+
+.one-half {
+    width: 49%;
+    float: left;
+    margin-left: 2%;
+}
+
+.first {
+    margin-left: 0;
+}
+
+@media screen ( max-width:480px ) {
+	.one-half {
+		width: 100%
+		margin-left: 0
+	}
+}
+
+.post-type-project #postdivrich #wp-content-media-buttons {
+    display: none;
+}
+
+.post-type-project .wp-editor-expand #wp-content-editor-tools {
+    background: transparent;
+    padding: 0;
+}

@@ -1,0 +1,6 @@
+[submodule "includes/admin-notice-helper"]
+	path = includes/admin-notice-helper
+	url = https://github.com/iandunn/admin-notice-helper.git
+[submodule "includes/CMB2"]
+	path = includes/CMB2
+	url = https://github.com/WebDevStudios/CMB2.git
