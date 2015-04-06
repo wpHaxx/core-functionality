@@ -141,7 +141,8 @@ if ( ! class_exists( 'Core_Functionality' ) ) {
 			if( file_exists( CF_DIR . 'includes/admin-notice-helper/admin-notice-helper.php' ) ) {
 				require_once CF_DIR . 'includes/admin-notice-helper/admin-notice-helper.php';
 			}
-					
+			require_once CF_DIR . 'includes/functions/common-functions.php';
+				
 			// Post Types
 			require_once CF_DIR . 'includes/post-types/class-cpt.php';
 			require_once CF_DIR . 'includes/post-types/staff.php';
