@@ -28,9 +28,9 @@ if ( ! class_exists( 'Contact_Widget' ) ) {
 	     *
 	     * @return void
 	     **/
-		function Contact_Widget() {
+		function __construct() {
 			$widget_ops = array( 'classname' => 'widget_contact', 'description' => 'Contact info widget' );
-			$this->WP_Widget( 'contact-widget', 'Contact Widget', $widget_ops );
+			parent::__construct( 'contact-widget', 'Contact Widget', $widget_ops );
 		}
 
 	    /**
