@@ -30,10 +30,10 @@ if( !class_exists( 'Font_Awesome_Social_Icon_Widget' ) ) {
 	     *
 	     * @return void
 	     **/
-		function Font_Awesome_Social_Icon_Widget() {
+		function __construct() {
 			$widget_ops = array( 'classname' => 'widget_socials', 'description' => 'Social icon widget' );
-			$this->WP_Widget( 'social-icon-widget', 'Social Icon Widget', $widget_ops );
-
+			parent::__construct( 'social-icon-widget', 'Social Icon Widget', $widget_ops );
+			
 			// Enqueue Scripts
 			add_action( 'wp_enqueue_scripts', array( $this, 'widget_scripts' ) );
 		}
